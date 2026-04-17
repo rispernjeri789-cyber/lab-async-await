@@ -1,5 +1,5 @@
 // Write your code here!
-[8:49 am, 4/16/2026] risper orina: function displayPosts(posts) {
+async: function displayPosts(posts) {
   const ul = document.getElementById("post-list");
 
   if (!ul) {
@@ -21,12 +21,12 @@
     li.appendChild(p);
     ul.appendChild(li);
   });
-}
+}();
 
 async function fetchPosts() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const data = await response.json();
+    const data = await response.json
 
     displayPosts(data);
   } catch (error) {
@@ -36,4 +36,3 @@ async function fetchPosts() {
 
 
 fetchPosts();
-[8:49 am, 4/16/2026] risper Moringa: Async
